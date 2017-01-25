@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<title>Works Matchmaking Tool</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-slider.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body style="padding:30px;width:66%;">
+	<a href="my-business-market.html"><span class="fa fa-chevron-left fa-fw"></span> Back</a>
+	<img alt="logo" class="pull-right" src="img/logo.svg" height="250">
+	<h1 class="m-b-15 m-t-15">Local Market Report</h1>
+	<h4 class="m-b-15">Testing Work Packages and Local Suppliers</h4>
+	<p class="m-b-15">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+		dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+		non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<table class="works table table-hover table-default" style="width:100%;margin-top:30px;">
+		<thead>
+			<tr>
+				<th>Task Description</th>
+				<th>Attribute</th>
+				<th>Local Suppliers</th>
+				<th>Work Packs</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr onClick="$('#provider1').toggleClass('hidden');" style="cursor:pointer;">
+				<td>
+					FF and E (Fixed Furniture and Equipment)
+				</td>
+				<td>
+					Drilling
+				</td>
+				<td>
+					3
+				</td>
+				<td>
+					5
+				</td>
+			</tr>
+			<tr id="provider1" class="hidden" style="background:#f1f1f1;">
+				<td></td>
+				<td colspan="3">
+						<h5 style="margin-bottom:5px;">Drilling Suppliers:</h5>
+						<ul style="text-align:left;">
+							<li>Company Name Pty Ltd</li>
+							<li>Registered Business Name</li>
+							<li>NZ Trading Name</li>
+						</ul>
+				</td>
+			</tr>
+			<tr onClick="$('#provider2').toggleClass('hidden');" style="cursor:pointer;">
+				<td>
+					<a href="my-business-work-package.html">Geostores Sea Containers</a>
+				</td>
+				<td>
+					Sea Containers
+				</td>
+				<td>
+					5
+				</td>
+				<td>
+					32
+				</td>
+			</tr>
+			<tr id="provider2" class="hidden" style="background:#f1f1f1;">
+				<td></td>
+				<td colspan="3">
+						<h5 style="margin-bottom:5px;">Sea Container Suppliers:</h5>
+						<ul style="text-align:left;">
+							<li>Company Name Pty Ltd</li>
+							<li>Registered Business Name</li>
+							<li>NZ Trading Name</li>
+							<li>Company Name Pty Ltd</li>
+							<li>Registered Business Name</li>
+						</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Earthworks, Drainage, Road works and Imported Earthworks</a>
+				</td>
+				<td>
+					Valve Maintenance Services
+				</td>
+				<td>
+					22
+				</td>
+				<td>
+					15
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Hydraulics Services</a>
+				</td>
+				<td>
+					Manufactoring
+				</td>
+				<td>
+					5
+				</td>
+				<td>
+					12
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Work Package</a>
+				</td>
+				<td>
+					Security Services
+				</td>
+				<td>
+					0
+				</td>
+				<td>
+					1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Work Package</a>
+				</td>
+				<td>
+					Storage
+				</td>
+				<td>
+					0
+				</td>
+				<td>
+					2
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Work Package</a>
+				</td>
+				<td>
+					Medical Services
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					0
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Work Package</a>
+				</td>
+				<td>
+					Offshore Installation
+				</td>
+				<td>
+					7
+				</td>
+				<td>
+					14
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="my-business-work-package.html">Work Package</a>
+				</td>
+				<td>
+					Platform Supply Vessles
+				</td>
+				<td>
+					5
+				</td>
+				<td>
+					3
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+					41 local
+				</td>
+				<td>
+					82 work packs
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<h2 class="m-t-15 text-right">
+		Result: 65% <small>Local availability</small>
+	</h2>
+	<h3 class="m-t-15">
+		Based of these results
+	</h3>
+	<p class="m-t-15">
+		Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+		ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	</p>
+	<p>
+		Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+		voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+		sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+		veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+		autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+		eum fugiat quo voluptas nulla pariatur?
+	</p>
+	<img src="img/local-market-report.png" alt="Alt">
+	<div class="row m-t-30">
+		<div class="col-sm-12">
+			<div class="logo ">
+				<img alt="logo" class="pull-left" src="img/logo.svg" height="50">
+				<h3 class="hidden-sm hidden-xs">Works <br><span>Matchmaking Tool</span></h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 small text-muted">
+			This report was produced by Works Matchmaking Tool Pty Limited. For more information about this website, the privacy policies
+			and copyright, please access the those specific pages on www.worksmatchmaking.com.au. If you wish to access information
+			about Works Matchmaking Tool, click here.
+		</div>
+	</div>
+</body>
+
+
+
+</html>

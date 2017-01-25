@@ -1,0 +1,197 @@
+
+
+
+
+
+section.profile .main .oppertunities {
+	padding-top:15px;
+}
+
+
+section.profile .main .oppertunities .oppertunity {
+    border-left: 1px solid #e1e7e8;
+    border-bottom: 1px solid #e1e7e8;
+    background: #fff;
+    transition: all ease .25s;
+    margin-bottom: 5px;
+	padding:10px;
+	display:inline-table;
+	width:100%;
+}
+
+section.profile .main .oppertunities .oppertunity:hover {
+    background: #fff;
+    border-left: 1px solid #b1bfc1;
+    border-bottom: 1px solid #b1bfc1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+}
+
+section.profile .main .oppertunities .score {
+	text-align:center;
+	font-weight:500;
+	font-size:13px;
+	color:#62cb31;
+}
+
+section.profile .main .oppertunities .graph {
+	background-image: url(img/project-graph-green.png);
+	height:40px;
+	width:100%;
+	margin-right:15px;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom:5px;
+}
+
+section.profile .main .oppertunities img {
+	opacity: 0.1;
+	transition: 0.25s ease all;
+}
+
+section.profile .main .oppertunities .oppertunity:hover img {
+	opacity: 0.5;
+}
+
+section.profile .main .oppertunities .img-o {
+	background-color: #f1f1f1;
+	float:left;
+	margin-right:10px;
+}
+
+
+section.profile .main .oppertunities h3 {
+	padding-top:20px;
+}
+
+
+
+section.profile .main .oppertunities h4 span {
+	display:block;
+	color:#bbc3c4;
+	font-size:80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.profile .main article {
+	border-bottom:1px solid #e7eaeb;
+	border-left:1px solid #e7eaeb;
+	margin-bottom:10px;
+	background:#fff;
+	padding:7px;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition-property: border-color, box-shadow, background-color;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: initial, initial;
+	display: inline-table;
+	width:100%;
+	position: relative;
+}
+
+section.profile .main article:hover {
+	border-color: #ccc;
+    box-shadow:   0 4px  8px rgba(0, 0, 0, .15);
+}
+
+section.profile .main article footer {
+	clear:both;
+}
+
+section.profile .main article p {
+	color:#4f6365;
+}
+section.profile .main article .img-o {
+	background-color:#e7eaeb;
+	height:80px;
+	width:130px;
+}
+section.profile .main article .fa {
+	color:#c1c7c8;
+}
+
+section.profile .main article .extra {
+	font-size:0;
+	position: absolute;
+	bottom:1px;
+}
+
+section.profile .main article .info {
+	padding-top:7px;
+	padding-bottom:17px;
+	margin-left:140px;
+}
+
+section.profile .main article .info h3 a {
+	color:#253638;
+}
+section.profile .main article .btn {
+	border-bottom:0;
+	padding-bottom:5px;
+	padding-top:5px;
+	
+}
+section.profile .main article .tag {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+
+
+section.profile .main article .work-packages {
+	display: inline-table;
+	width:100%;
+	margin-bottom:30px;
+}
+
+
+
+section.profile .main article .work-packages ul {
+	margin:0;
+	padding:0;
+}
+
+
+section.profile .main article .work-packages ul li {
+	display: block;
+	padding:5px;
+	border-top:1px solid #ccc;
+	
+}
+
+section.profile .main article .work-packages ul li:hover {
+	background:#fafafa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

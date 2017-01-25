@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="396" height="430" viewBox="0 0 396 430">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d64f1e;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #b84425;
+      }
+
+      .cls-3 {
+        fill: #ce5f32;
+      }
+
+      .cls-4 {
+        fill: #192628;
+        filter: url(#filter);
+      }
+
+      .cls-5 {
+        fill: #253638;
+      }
+    </style>
+    <filter id="filter" x="221.656" y="119" width="86.344" height="220" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="221.656" y="119" width="86.344" height="220" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODYuMzQ0IiBoZWlnaHQ9IjIyMCIgdmlld0JveD0iMCAwIDg2LjM0NCAyMjAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDMuMTcyIiB5MT0iMjIwIiB4Mj0iNDMuMTcyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzI1MzYzOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjAuMjY3IiBzdG9wLWNvbG9yPSIjMjUzNjM4Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZjN2I3ZCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iODYuMzQ0IiBoZWlnaHQ9IjIyMCIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M90,119l50-29V230L90,260V119Z"/>
+  <path class="cls-2" d="M140,229l33,21v59L90,259Z"/>
+  <path class="cls-1" d="M174,150l49,29v99l-49,30V150Z"/>
+  <path class="cls-2" d="M223,119v61l-49-29Z"/>
+  <rect class="cls-3" x="173" y="250" width="1" height="58"/>
+  <path class="cls-4" d="M222,179l-0.331-60L308,170V309l-50,30V199.932Z"/>
+  <path class="cls-1" d="M111,38.02l1-.569L162,80,61,137.47Z"/>
+  <path class="cls-5" d="M284,391.462l-1,.579L233,350l101-58.5Z"/>
+</svg>

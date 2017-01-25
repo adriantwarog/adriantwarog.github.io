@@ -1,0 +1,533 @@
+section.projectview {
+	padding-bottom:60px;
+	
+}
+
+
+
+
+
+
+
+
+section.projectview .img-o {
+	background-size:cover;
+}
+
+
+
+
+
+
+
+section.projectview header {
+	background:#f1f1f1;
+	border-bottom:4px solid #c4cfd1;
+	padding-top:15px;
+	width:100%;
+	position: relative;
+	text-align: center;
+	
+}
+
+
+section.projectview header .banner {
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-image:url(img/project-view-img.png);
+	background-size:cover;
+	background-position: center center;
+	opacity: 0.5;
+}
+
+section.projectview header .overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: -webkit-linear-gradient(left,rgba(231,234,235,0) 0,rgba(231,234,235,1) 100%);
+    background: linear-gradient(to left,rgba(231,234,235,0) 0,rgba(231,234,235,1) 100%);
+}
+
+section.projectview header .overlay:before {
+	content:"";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: -webkit-linear-gradient(right,rgba(231,234,235,0) 0,rgba(231,234,235,1) 100%);
+    background: linear-gradient(to right,rgba(231,234,235,0) 0,rgba(231,234,235,1) 100%);
+}
+
+section.projectview header .images {
+	display: inline-table;
+	font-size:0;
+	position: relative;
+	
+}
+
+section.projectview header .img-o {
+	float:left;
+	margin-left:5px;
+}
+
+section.projectview header .img-o.sm {
+	width:150px;
+}
+section.projectview header .img-o.md {
+	width:250px;
+	height:150px;
+	margin-bottom:15px;
+}
+
+section.projectview header .relative {
+	position: relative;
+}
+
+section.projectview header h4 {
+	color:#d6511e;
+}
+
+section.projectview header .info {
+	overflow: hidden;
+	display: inline-table;
+	margin-top:15px;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-bottom:30px;
+}
+section.projectview header .info .li {
+	border-left:1px solid #e1e7e8;
+	background:#fff;
+	padding:8px;
+	font-size:11px;
+	color:#96a2a4;
+	margin-left:-1px;
+	text-align:left;
+	display: table-cell;
+	font-size:10px;
+	
+}
+section.projectview header .info .li div {
+	display:table-cell;
+	vertical-align: top;
+}
+section.projectview header .info .li:first-child {
+	border-left:0;
+	
+}
+section.projectview header .info li:hover {
+	background:#e7eaeb;
+}
+
+section.projectview header .info b {
+	display:block;
+	color:#4f6365;
+	font-size:11px;
+}
+section.projectview header .info .fa {
+	font-size:16px;
+	color:#96a2a4;
+	margin-right:3px;
+	margin-top:2px;
+	margin-left:-3px;
+	float:left;
+}
+
+
+
+
+section.projectview header .project-progress {
+	position: absolute;
+	bottom:-4px;
+	left:0;
+	right:0;
+	width:100%;
+	text-align: left;
+	font-size:0;
+	
+}
+
+section.projectview header .project-progress .complete {
+	width:25%;
+	float:left;
+	background:#445d60;
+	height:4px;
+	position: relative;
+}
+
+
+section.projectview header .project-progress .complete.inprogress {
+	width:9%;
+	background:#d6511e;
+}
+
+
+section.projectview header .project-progress .complete .placeholder {
+	position: absolute;
+	bottom:14px;
+	right:-30px;
+	font-size:11px;
+	color:#96a2a4;
+}
+section.projectview header .project-progress .complete .placeholder b{
+	font-size:14px;
+}
+section.projectview header .project-progress .complete.inprogress .placeholder {
+	color:#d6511e;
+}
+
+
+section.projectview header .container {
+	position: relative
+}
+section.projectview header .more-details {
+	position: absolute;
+	right:0;
+	bottom:0;
+	background:#c4cfd1;
+	padding:10px;
+	padding-left:30px;
+	padding-right:30px;
+	cursor: pointer;
+}
+section.projectview header .more-details:hover {
+	background:#b3bfc1;
+}
+
+
+
+section.projectview .project-item {
+	background:#fff;
+	border-bottom:1px solid #c4cfd1;
+	margin-bottom:30px;
+}
+section.projectview .project-item .container {
+	padding:10px;
+	position: relative;
+}
+section.projectview .project-item h2 {
+	margin-bottom:10px;
+}
+
+section.projectview .project-item .img-o {
+	background-color:#f1f1f1;
+	margin-right:15px;
+	width:125px;
+	height:75px;
+}
+
+
+section.projectview .project-item .more-details {
+	position: absolute;
+	right:0;
+	bottom:0;
+	background:#e7eaeb;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	cursor: pointer;
+}
+section.projectview .project-item .more-details:hover {
+	background:#c4cfd1;
+}
+
+
+
+
+
+
+
+
+
+.works-table {
+	width:100%;
+	border-collapse: separate;
+}
+
+
+
+
+
+
+.works-table thead tr th {
+	font-size:14px;
+	font-family: "Museo";
+	font-weight:500;
+	color:#96a2a4;
+	padding:7px;
+	text-align: center;
+}
+
+.works-table tbody tr {
+	border-left:1px solid #e7eaeb;
+}
+.works-table tbody tr td {
+	border-bottom:1px solid #e7eaeb;
+	background-color:#fff;
+	height:35px;
+	position: relative;
+}
+
+.works-table tbody tr:hover td {
+	background:#fafafa;
+	border-bottom:1px solid #c4cfd1;
+}
+
+.works-table tbody tr td:first-child {
+	min-width:300px;
+	font-weight:500;
+	padding-left:20px;
+}
+
+.works-table thead tr th:nth-child(1) {
+	text-align: left;
+}
+.works-table thead tr th:nth-child(2) {
+	min-width:100px;
+	text-align: left;
+}
+.works-table tbody tr td:nth-child(7),
+.works-table tbody tr td:nth-child(8) {
+	text-align: center;
+	padding:0;
+	width:50px;
+}
+
+.works-table tbody tr td:first-child:before {
+	position: absolute;
+	content:"";
+	top:0;
+	left:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 0;
+	border-color: #e7eaeb transparent transparent transparent;
+}
+
+
+.works-table .progress-bars {
+	position: absolute;
+	bottom:0;
+	height:3px;
+	font-size:0;
+}
+
+
+
+.works-table .progress-bars .bar {
+	width:14px;
+	height:3px;
+	background:#e7eaeb;
+	display:inline-block;
+	position: relative;
+	margin-right:2px;
+}
+.works-table .progress-bars .bar.grey {
+	background:#96a2a4;
+}
+.works-table .progress-bars .bar.active {
+	background:#02a9d1;
+}
+.works-table .progress-bars .bar.loading {
+	background:#e17036;
+}
+.works-table .progress-bars .bar.complete {
+	background:#69c6b3;
+}
+.works-table .progress-bars .bar.active-progress:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #02a9d1 transparent;
+}
+.works-table .progress-bars .bar.loading-progress:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #e17036 transparent;
+}
+.works-table .progress-bars .bar.complete-progress:before {
+	content: "\f00c";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 14px;
+	padding-top:1px;
+	font-size:9px;
+	text-align:center;
+	font-family: FontAwesome;
+	color:#fff;
+	height: 15px;
+	background: #69c6b3;
+	border-top:2px solid #69c6b3;
+	border-radius:2px;
+}
+
+.works-table .status {
+	font-size:11px;
+	color:#96a2a4;
+}
+
+
+
+
+.works-table .date {
+	font-weight: bold;
+	color:#4f6365;
+	text-align: center;
+	transition: none;
+}
+.works-table .date sup {
+	font-weight: normal;
+	color:#96a2a4;
+	transition: none;
+}
+.works-table .month {
+	color:#96a2a4;
+	font-size:11px;
+	text-align: center;
+	transition: none;
+}
+
+
+.works-table td.active .date,
+.works-table td.active .month,
+.works-table td.active .date sup {
+	color:#02a9d1;
+}
+
+.works-table td.loading .date,
+.works-table td.loading .month,
+.works-table td.loading .date sup {
+	color:#e17036;
+}
+
+
+.works-table td.inactive .date,
+.works-table td.inactive .month,
+.works-table td.inactive .date sup {
+	color:#c5cccc;
+}
+
+
+
+
+.works-table .btn {
+	background: #fff;
+	border:none;
+	display: block;
+	
+	transition: none;;
+}
+.works-table .btn:hover {
+	background: #f1f1f1;
+}
+
+
+
+
+
+
+
+section.projectview .search-holder {
+	background:#fff;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding-top:15px;
+}
+
+
+section.projectview .search-group h4 {
+	margin-bottom:5px;
+}
+
+section.projectview .search-group {
+	margin-bottom:30px;
+}
+
+section.projectview .seperator {
+	background:#e7eaeb;
+	height:2px;
+	margin-right:-15px;
+	border-bottom:1px solid #ffffff;
+	margin-bottom:20px;
+}
+
+section.projectview .search-slide {
+	padding-right:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	position: relative;
+}
+
+section.projectview .search-slide .start,
+section.projectview .search-slide .end {
+	position: absolute;
+	left:0;
+	bottom:-10pxpx;
+	font-family:"Museo";
+	font-size:14px;
+	font-weight:500;
+	color:#c4cfd1;
+}
+section.projectview .search-slide .end {
+	right:15px;
+	left:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

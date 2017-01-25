@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<title>Works Matchmaking Tool</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	
+	
+	<link rel="stylesheet" href="css/bootstrap-slider.css">
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="business.css">
+</head>
+
+<body>
+
+
+	<header id="header">
+		<section class="container top">
+			<div class="left"></div>
+			<div class="phone">
+				<span class="fa fa-volume-control-phone fa-fw"></span>1300 363 831
+			</div>
+			<div class="break"></div>
+			<div class="bottom"></div>
+			<div class="right"></div>
+		</section>
+		<section class="container menu-main">
+			<div class="logo ">
+				<img alt="logo" class="pull-left" src="img/logo.svg" height="70">
+				<div class="">
+					<h3>Works <br><span>Matchmaking Tool</span></h3>
+				</div>
+			</div>
+			<nav class="hidden-sm hidden-xs">
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="business.html" class="active">Business</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="my-profile.html">Login</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="menu-secondary hidden-sm hidden-xs ">
+			<div class="container">
+				<ul>
+					<li><a href="business.html" class="active">Search</a></li>
+					<li><a href="business-view.html">Goods & Services</a></li>
+					<li><a href="#">Register for Listing</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Business Alliances</a></li>
+				</ul>
+			</div>
+		</section>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="business">
+	
+		<aside class="menu-left">
+			<div class="search-group">
+				<h4>Keyword <small>business categories</small></h4>
+				<input id="keyword" type="text" class="form-control" placeholder="Automotive, Electrical, etc..." onkeyup="businessInput(this);">
+			</div>
+			
+			<div class="search-group">
+				<h4>Location <small>business premise</small></h4>
+				<input type="text" class="form-control" placeholder="1 Street, Suburub, 6000, WA" onkeyup="businessInput(this);">
+			</div>
+			
+			<div class="search-group">
+				<h4>Attributes <small>goods & services</small></h4>
+				<textarea class="form-control" rows="2" placeholder="Hire Equipment, Service Provider, Manufacturer" onkeyup="businessInput(this);"></textarea>
+			</div>
+			
+			<div class="seperator"></div>
+
+			<h3 style="margin-bottom:15px;">Data:</h3>
+			
+			<div class="search-group">
+				<h4>Age <small>estiblished (years)</small></h4>
+				<div class="search-slide">
+					<input class="prepare-slider" 
+						data-slider-id='ex1Slider' 
+						type="text" 
+						data-slider-min="0" 
+						data-slider-max="50" 
+						data-slider-step="1" 
+						data-slider-value="14" 
+						  />
+					<div class="start">1+</div>
+					<div class="end">40+</div>
+				</div>
+			</div>
+			
+			<div class="search-group">
+				<h4>Turnover <small>per annum ($)</small></h4>
+				<div class="search-slide">
+					<input class="prepare-slider" 
+						data-slider-id='ex1Slider' 
+						type="text" 
+						data-slider-min="70" 
+						data-slider-max="1000" 
+						data-slider-step="10" 
+						data-slider-value="500" 
+						  />
+					<div class="start">70k</div>
+					<div class="end">1m+</div>
+				</div>
+			</div>
+			
+			<div class="search-group">
+				<h4>Size <small>Employed Staff</small></h4>
+				<div class="search-slide">
+					<input class="prepare-slider" 
+						data-slider-id='ex1Slider' 
+						type="text" 
+						data-slider-min="5" 
+						data-slider-max="3000" 
+						data-slider-step="10" 
+						data-slider-value="500" 
+						  />
+					<div class="start">5</div>
+					<div class="end">3,000+</div>
+				</div>
+			</div>
+			
+		</aside>
+		
+		
+		
+		
+		
+		<div class="results-middle">
+			<h4><span>Search Results</span> 1,000+</h4>
+			
+			<div class="results">
+			
+			
+				<article data-title="AAM Pty Ltd">
+					<header class="pull-right">
+						<span class="fa fa-star active"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</header>
+					<div class="image pull-left">
+						<div class="img-o md"></div>
+					</div>
+					<div class="info">
+						<h3><a href="business-view.html">AAM Pty Ltd</a></h3>
+						<p>Level 3, 1002 Hay Street Perth WA 6000 Australia</p>
+						<div class="extra">
+							<div class="btn btn-secondary phone"><span class="fa fa-phone fa-fw -m-l-xs"></span>(08) 9228 6800</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-fax fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-globe fa-fw -m-l-xs"></span>www.aamgroup.com</div>
+						</div>
+					</div>
+					<footer>
+						<span class="btn tag">Aerial Survey</span>
+						<span class="btn tag">Mapping</span>
+						<span class="btn tag">Data Modelling</span>
+						<span class="btn tag">GIS</span>
+					</footer>
+				</article>
+				
+				<article data-title="ABB Australia Pty Limited">
+					<header class="pull-right">
+						<span class="fa fa-star active"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</header>
+					<div class="image pull-left">
+						<div class="img-o md"></div>
+					</div>
+					<div class="info">
+						<h3><a href="business-view.html">ABB Australia Pty Limited</a></h3>
+						<p>2 Metal Circuit Malaga WA 6090 Australia</p>
+						<div class="extra">
+							<div class="btn btn-secondary phone"><span class="fa fa-phone fa-fw -m-l-xs"></span>(08) 9202 2640</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-fax fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-globe fa-fw -m-l-xs"></span>www.abbaustralia.com.au</div>
+						</div>
+					</div>
+					<footer>
+						<span class="btn tag">Maintenance</span>
+						<span class="btn tag">Spare Parts</span>
+					</footer>
+				</article>
+				
+				
+				<article data-title="Advanced Electrical Equipment">
+					<header class="pull-right">
+						<span class="fa fa-star active"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</header>
+					<div class="image pull-left">
+						<div class="img-o md"></div>
+					</div>
+					<div class="info">
+						<h3><a href="business-view.html">Advanced Electrical Equipment</a></h3>
+						<p>39 Collingwood Street Osborne Park WA 6017 Australia</p>
+						<div class="extra">
+							<div class="btn btn-secondary phone"><span class="fa fa-phone fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-fax fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-globe fa-fw -m-l-xs"></span>chamber.com</div>
+						</div>
+					</div>
+					<footer>
+						<span class="btn tag">Construction</span>
+						<span class="btn tag">Manufacturer</span>
+					</footer>
+				</article>
+				
+				<article data-title="Access Petrotec Mining Solutions">
+					<header class="pull-right">
+						<span class="fa fa-star active"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</header>
+					<div class="image pull-left">
+						<div class="img-o md"></div>
+					</div>
+					<div class="info">
+						<h3><a href="business-view.html">Access Petrotec & Mining Solutions</a></h3>
+						<p>Unit 1, 13-17 Sorbonne Cres Canning Vale WA 6155 Australia</p>
+						<div class="extra">
+							<div class="btn btn-secondary phone"><span class="fa fa-phone fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-fax fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-globe fa-fw -m-l-xs"></span>www.accesspetrotec.com</div>
+						</div>
+					</div>
+					<footer>
+						<span class="btn tag">Tanks</span>
+						<span class="btn tag">Storage</span>
+						<span class="btn tag">Submersible Sump</span>
+						<span class="btn tag">Dangerous goods</span>
+						<span class="btn tag">Railway </span>
+						<span class="btn tag">Road Wagons</span>
+					</footer>
+				</article>
+				
+				<article data-title="Registered Business Name">
+					<header class="pull-right">
+						<span class="fa fa-star active"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</header>
+					<div class="image pull-left">
+						<div class="img-o md"></div>
+					</div>
+					<div class="info">
+						<h3><a href="business-view.html">Registered Business Name</a></h3>
+						<p>1, Street Address, Suburb, State, 6000, Australia</p>
+						<div class="extra">
+							<div class="btn btn-secondary phone"><span class="fa fa-phone fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-fax fa-fw -m-l-xs"></span>(08) 9361 7666</div>
+							<div class="btn btn-secondary phone"><span class="fa fa-globe fa-fw -m-l-xs"></span>website.com.au</div>
+						</div>
+					</div>
+					<footer>
+						<span class="btn tag">Construction</span>
+						<span class="btn tag">Manufacturer</span>
+					</footer>
+				</article>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="map-right">
+			<div id="map"></div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="general-break">
+		<div class="background text-center">
+			<div class="overlay"></div>
+			<h1>Get In Touch <br />
+				<small>with us to see how we can list you</small>
+			</h1>
+			<div class="btn btn-primary">Learn More</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="top">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="logo">
+				<img alt="logo" class="pull-left" src="img/logo.svg" height="70">
+				<h3 class="hidden-sm hidden-xs">Works <br /><span>Matchmaking Tool</span></h3>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="col-sm-4">
+				<h1>Project Listing <span class="fa fa-fw fa-chevron-down "></span></h1>
+				<p>Are you looking for Proejct related pages. Check the links below for more information.</p>
+				<ul>
+					<li><a href="#">What is a Project</a></li>
+					<li><a href="#">How do I find Jobs and Work</a></li>
+					<li><a href="#">Can I list my Tenders</a></li>
+					<li><a href="#">Can i register to do a job</a></li>
+					<li><a href="#">What is Opportunity Score</a></li>
+					<li><a href="#">Using Recommendations</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-sm-4 t text-center">
+				<h1>About WMT</h1>
+				<p>Works Matchmaking Tools is a free listing service for projects and businesses to help them connect and develop the interactions and possibilities. It was created in collaboration with:</p>
+				
+				<div class="row sponsors">
+					<div class="col-sm-6 text-left">
+						<h4>Sponsored By:</h4>
+						<div class="img-o md"></div>
+					</div>
+					
+					<div class="col-sm-6 text-left">
+						<h4>Affiliates::</h4>
+						<div class="img-o sm"></div>
+						<div class="img-o sm"></div>
+						<div class="img-o sm"></div>
+						<div class="img-o sm"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4 orange">
+				<h1>Business Directory <span class="fa fa-fw fa-chevron-down "></span></h1>
+				<p>Are you afteer listing your business in the directory as well as the goods and services:</p>
+				<ul>
+					<li><a href="#">How to search Business</a></li>
+					<li><a href="#">What are Goods and Services</a></li>
+					<li><a href="#">Can I apply for Tenders</a></li>
+					<li><a href="#">Can apply for a work pack</a></li>
+					<li><a href="#">What is Opportunity Score</a></li>
+					<li><a href="#">Using Business Alliances</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</footer>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-slider.js"></script>
+	<script src="style.js"></script>
+	
+	<script>
+		function businessInput(obj){
+			if($(obj).val())
+				$('section.business').addClass('searching');
+			else
+				$('section.business').removeClass('searching');
+		}
+	
+		function pinSymbol(color) {
+			return {
+				path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+				fillColor: color,
+				fillOpacity: 2,
+				strokeColor: '#fff',
+				strokeWeight: 0.5,
+				scale: 1,
+		   };
+		}
+		
+      function initMap() {
+        var uluru = {lat: -32.0269699, lng: 115.8632014};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru,
+			styles: style
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+		  icon: pinSymbol("#253638"),
+          map: map
+        });
+      }
+    </script>
+    
+	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDStko1rcGNPwEkXjasEF_4-Us2K1uK7QM&callback=initMap">
+    </script>
+    
+ 
+    
+    
+	<script>
+		$("input.prepare-slider").bootstrapSlider({tooltip: 'hide'});
+	</script>
+
+</body>
+
+</html>

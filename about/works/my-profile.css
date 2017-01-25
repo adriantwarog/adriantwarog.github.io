@@ -1,0 +1,640 @@
+section.profile .container {
+	position: relative;
+}
+
+section.profile .main {
+	margin-left:215px;
+}
+
+
+section.profile header {
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	background:#fff;
+	font-size:0;
+	height:40px;;
+}
+
+
+
+
+
+/*
+
+section.profile header nav ul li {
+	display:inline-block;
+	position: relative;
+}
+
+section.profile header nav ul li a:after {
+	border-right:1px solid #ccc;
+	position: absolute;
+	top:0;
+	left:0px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 37px 30px 0 0;
+	border-color: #fff transparent transparent transparent;
+}
+
+section.profile header nav ul li a:before {
+	border-right:1px solid #ccc;
+	position: absolute;
+	top:0;
+	left: 1px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 37px 30px 0 0;
+	border-color: #c4cfd1 transparent transparent transparent;
+}
+
+section.profile header nav ul li a {
+	display:block;
+	padding:10px;
+	font-size:16px;
+	font-family: "Museo";
+	padding-left:40px;
+}
+section.profile header nav ul li a.active {
+	background:#fafafa
+}
+*/
+
+section.profile header nav ul.nav {
+	display:inline-table;
+	position: relative;
+	margin:0;
+	padding:0;
+}
+
+section.profile header nav ul.nav li {
+	padding:0;
+	margin:0;
+	list-style-type: none;
+	display:inline-block;
+}
+
+section.profile header nav ul.nav li a.tab {
+	font-size:16px;
+	display:inline-block;
+	font-family: 'Museo';
+	padding:0;
+	margin:0;
+	height:38px;
+	line-height:38px;
+	padding-left:10px;
+	padding-right:35px;
+	position:relative;
+	text-decoration:none;
+}
+
+section.profile header nav ul.nav li a.tab.active {
+	background:#f6f6f6;
+}
+
+section.profile header nav ul.nav li a.tab.active:after {
+	border-color: transparent transparent #f6f6f6 transparent;
+}
+
+
+section.profile header nav ul.nav li a.tab:hover {
+	background:#f1f1f1;
+}
+section.profile header nav ul.nav li a.tab:before,
+section.profile header nav ul.nav li a.tab:after
+{
+	content: " ";
+	display:inline-block;
+	position:absolute;
+	left:-33px;
+	top:0px;
+	border-style: solid;
+	border-width: 0 0 38px 33px;
+	
+	border-color: transparent transparent #ccc transparent;
+}
+section.profile header nav ul.nav li a.tab:after {
+	left:-32px;
+	border-color: transparent transparent #fff transparent;
+}
+
+section.profile header nav ul.nav li a.tab:hover:after {
+	left:-32px;
+	border-color: transparent transparent #f1f1f1 transparent;
+}
+
+section.profile header nav ul.nav:after {
+	content: " ";
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	z-index:60;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 39px 33px;
+	border-color: transparent transparent #fff transparent;
+}
+
+
+
+
+section.profile header nav .dropdown {
+	position: absolute;
+	top:100%;
+	right:33px;
+	background:#f6f6f6;
+	font-size:13px;
+	z-index:50;
+	left:-33px;
+	border:1px solid #ccc;
+	border-top:1px solid #eee;
+	border-right:0;
+	display: none;
+}
+
+section.profile header nav ul.nav li:hover .dropdown {
+	display:block;
+}
+
+
+section.profile header nav .dropdown ul {
+	margin:0;
+	padding:0;
+}
+section.profile header nav .dropdown ul li {
+	display: block;
+}
+
+
+section.profile header nav .dropdown ul li a {
+	padding:10px;
+	display: block;
+	text-decoration: none;
+	font-family:"Museo";
+	font-size:14px;
+	color:#4f6365;
+	opacity: 0.75;;
+}
+
+
+section.profile header nav .dropdown ul li a:hover {
+	background:#fff;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+section.profile {
+	position: relative;
+}
+
+section.profile .left-menu {
+	background: #fff;
+	border-right:1px solid #e7eaeb;
+	position: absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	width:215px;
+}
+
+section.profile .left-menu:before {
+	position: absolute;
+	left:-150%;
+	background:#fff;
+	width:20px;
+	width:150%;
+	height:100%;
+	content:"";
+}
+
+section.profile .left-menu .img-o {
+	background-color:#e7eaeb;
+	margin-top:15px;
+	height:125px;
+	width:200px;
+	background-image:url(img/cciwa-logo.jpeg);
+	background-color:#fff;
+}
+
+section.profile .left-menu h5 {
+	color:#96a2a4;
+	margin-bottom:5px;
+	margin-top:15px;
+}
+
+
+
+section.profile .left-menu ul li a {
+	display: block;
+	padding:6px;
+	border-bottom:1px solid #ccc;
+	
+	text-decoration: none;
+}
+section.profile .left-menu ul li a .fa {
+	color:#c3c9ca;
+	margin-right:5px;
+}
+
+section.profile .left-menu ul li a:hover  {
+	background:#f1f1f1;
+}
+
+section.profile .left-menu ul li a.active,
+section.profile .left-menu ul li a.active .fa {
+	font-weight:500;
+	color:#b84626;
+	background:#f6f6f6;
+}
+
+
+
+section.profile .right-menu .img-o.lg {
+	margin-top:15px;
+	margin=bottom:15px;
+}
+
+section.profile .right-menu .contact-list {
+	border-bottom: 1px solid #c4cfd1;
+    border-left: 1px solid #c4cfd1;
+    background-color: #fff;
+	padding:15px;
+	margin-top:15px;
+}
+
+section.profile .right-menu .contact-list h4 {
+	margin-bottom:10px;
+}
+
+section.profile .right-menu .contact-list ul {
+	margin-left:-3px;
+}
+
+section.profile .right-menu .contact-list ul li {
+	display:block;
+	
+}
+
+section.profile .right-menu .contact-list ul li a {
+	display:inline-table;
+	width:100%;
+	text-decoration: none;
+	font-size:13px;
+	color:#96a2a4;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	margin-left:-5px;
+}
+
+section.profile .right-menu .contact-list ul li a b {
+	font-size:14px;
+	color:#4f6365;
+	font-weight:500;
+}
+
+section.profile .right-menu .contact-list ul li a:hover {
+	background: #f1f1f1;
+}
+
+section.profile .right-menu .contact-list .img-o {
+	height:30px;
+	width:50px;
+	background-color:#e7eaeb;
+	float:left;
+	margin-right:10px;
+}
+
+
+
+
+
+
+section.profile .right-menu .news-list {
+	border-bottom: 1px solid #c4cfd1;
+    border-left: 1px solid #c4cfd1;
+    background-color: #fff;
+	padding:15px;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+section.profile .right-menu .news-list h4 {
+	margin-bottom:10px;
+}
+
+section.profile .right-menu .news-list .img-o {
+	height:60px;
+	width:100px;
+	background-color:#e7eaeb;
+	float:left;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+
+
+section.profile .right-menu .news-list ul li a {
+	display:inline-table;
+	margin-left:-5px;
+	padding-left:5px;
+	padding-top:5px;
+	width:100%;
+	text-decoration: none;
+}
+section.profile .right-menu .news-list ul li a:hover {
+	background: #f1f1f1;
+}
+
+section.profile .right-menu .news-list ul h5 {
+	font-weight:bold;
+}
+section.profile .right-menu .news-list ul h5 small {
+	display:block;
+}
+
+
+section.profile .middle .row {
+	margin-bottom:15px;
+}
+section.profile .middle > h4 {
+	color:#c4cfd1;
+	margin-bottom:15px;
+}
+
+section.profile .middle {
+	margin-top:15px;
+	min-height:640px;
+}
+
+section.profile .middle .dashboard .info {
+    background-color: #fff;
+	padding-top:15px;
+	display: block;
+	cursor:inherit;
+	white-space: inherit;
+	text-align:left;
+}
+section.profile .middle .dashboard .info h5 {
+	display: inline-block;
+}
+section.profile .middle .dashboard .info p {
+	color:#96a2a4;
+	display: inline-block;
+}
+
+section.profile .middle .info .img-o {
+	background-color:#e7eaeb;
+	width:50px;
+	height:30px;
+}
+
+
+
+section.profile .middle article {
+	
+}
+
+
+section.profile .middle article {
+	border-bottom:1px solid #e7eaeb;
+	border-left:1px solid #e7eaeb;
+	margin-bottom:10px;
+	background:#fff;
+	padding:7px;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition-property: border-color, box-shadow, background-color;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: initial, initial;
+	display: inline-table;
+	width:100%;
+	position: relative;
+}
+
+section.profile .middle article:hover {
+	border-color: #ccc;
+    box-shadow:   0 4px  8px rgba(0, 0, 0, .15);
+}
+
+section.profile .middle article footer {
+	clear:both;
+}
+
+section.profile .middle article p {
+	color:#4f6365;
+}
+section.profile .middle article .img-o {
+	background-color:#e7eaeb;
+	height:80px;
+	width:130px;
+}
+section.profile .middle article .fa {
+	color:#c1c7c8;
+}
+
+section.profile .middle article .extra {
+	font-size:0;
+	position: absolute;
+	bottom:1px;
+}
+
+section.profile .middle article .info {
+	padding-top:7px;
+	padding-bottom:17px;
+	margin-left:140px;
+}
+
+section.profile .middle article .info h3 a {
+	color:#253638;
+}
+section.profile .middle article .btn {
+	border-bottom:0;
+	padding-bottom:5px;
+	padding-top:5px;
+	
+}
+section.profile .middle article .tag {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+
+
+
+
+
+
+section.profile .main .table-projects {
+	background:#fff;
+	border-bottom:1px solid #e7eaeb;
+	border-left:1px solid #e7eaeb;
+}
+
+section.profile .main .table-projects table {
+	margin-bottom:0;
+}
+
+section.profile .main .table-projects thead tr th {
+	background:#e7eaeb;
+	border-bottom:0;
+}
+
+section.profile .main .table-projects td {
+	vertical-align: middle;
+}
+
+section.profile .main .table-projects td a {
+	font-weight:500;
+}
+
+section.profile .main .table-projects .graph {
+    background-image: url(img/project-graph.png);
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+section.profile .main .table-projects .graph.green {
+   background-image: url(img/project-graph-green.png)
+}
+section.profile .main .table-projects .graph.orange {
+   background-image: url(img/project-graph-orange.png)
+}
+section.profile .main .table-projects .graph.red {
+   background-image: url(img/project-graph-red.png)
+}
+
+
+section.profile .main ul li {
+	display:inline-block;
+}
+
+section.profile .main .description {
+	color:#96a2a4;
+	font-size:13px;
+}
+
+
+
+
+section.profile .main .blurb {
+	background:#f6f6f6;
+	padding:15px;
+	border-bottom:1px solid #e7eaeb
+}
+
+section.profile .main .blurb small {
+	display: block;
+	margin-bottom:10px;
+}
+section.profile .main .blurb p {
+	color:#999;
+	font-size:13px;
+}
+
+
+section.profile .main .blurb > .fa {
+	font-size:48px;
+	float:left;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+
+section.profile .main .options {
+	background:#fff;
+	border-bottom:1px solid #ccc;
+	margin-left:-1px;
+}
+section.profile .main .options ul {
+	margin:0;
+	padding:0;
+	font-size:0;
+}
+
+section.profile .main .options .btn {
+	background:#fff;
+	margin-bottom:-1px;
+}
+
+section.profile .main .options input {
+	width:200px;
+	float:left;
+	height: 33px;
+	border-left:0;
+	box-shadow: none;
+}
+
+section.profile .main .options > span.fa {
+	float:left;
+	height:33px;
+	line-height:33px;
+	color:#ccc;
+	padding-left:15px;
+	width:35px;
+}
+
+
+
+
+
+
+
+section.profile .main .matchmaking ul li {
+	display:block;
+	margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+
+section.profile .main .news {
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding:10px;
+	margin-top:15px;
+}
+
+
+section.profile .main .news .news-item {
+	display:inline-table;
+	margin-bottom:5px;
+	width:100%;
+}
+
+
+
+section.profile .main .news .news-item .img-o {
+	float:left;
+	background-color: #e1e1e1;
+	margin-right:15px;
+}
+
+section.profile .main .news > h3 {
+	margin-bottom:15px;
+}
+section.profile .main .news .news-item h4 {
+	margin:0;
+}
+
+section.profile .main .news .news-item p {
+	font-size:12px;
+}
+
+section.profile .main .news .news-item small {
+	display:block;
+}
+
+
+
+section.profile .main .alliances { 
+	border-bottom: 1px solid #c4cfd1;
+    border-left: 1px solid #c4cfd1;
+    background-color: #fff;
+	padding:15px;
+	margin-top:15px;
+	position: relative;
+}
+
+section.profile .main .alliances > h3 { 
+	margin-bottom:15px;
+}
+
+
+
+section.profile .main .alliances .alliance > p { 
+	color:#96a2a4;
+	font-size:13px;
+}
+
+section.profile .main .alliances .overlay {
+	position: absolute;
+	bottom:-1px;right:0;left:-1px;top:66%;
+	background: -webkit-linear-gradient(top,rgba(250,250,250,0.25) 0,rgba(250,250,250,1) 100%);
+	background: linear-gradient(top,rgba(250,250,250,0.25) 0,rgba(250,250,250,1) 100%);
+}
+
+section.profile .main .alliances .btn {
+	position: relative;
+	z-index: 50;
+	left:50%;
+	margin-top:15px;
+	padding:5px;
+	padding-left:15px;
+	transform: translateX(-50%);
+}
+
+
+section.profile .main .add-dashboard {
+	background:#f1f1f1;
+	border-bottom: 1px solid #c4cfd1;
+    border-left: 1px solid #c4cfd1;
+	height:70px;
+	text-align:center;
+	font-size:32px;
+	padding-top:20px;
+	color:#ccc;
+	cursor:pointer;
+}
+
+section.profile .main .add-dashboard:hover {
+	padding-top:10px;
+	background:#fff;
+}
+
+section.profile .main .dashboard .btn {
+	min-height:70px;
+}
+
+section.profile .main .add-dashboard .details {
+	font-size:14px;
+	display: none;
+}
+
+section.profile .main .add-dashboard:hover .details {
+	display: block;
+}
+
+
+section.profile .main .info .fa {
+	font-size:32px;
+	color:#ccc;
+	float:left;
+	margin-right:10px;
+	margin-top:5px;
+}
+
+
+
+
+section.profile .main .dash {
+	background:#fff;
+	border-bottom: 1px solid #c4cfd1;
+    border-left: 1px solid #c4cfd1;
+	padding:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

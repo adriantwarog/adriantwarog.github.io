@@ -1,0 +1,405 @@
+
+
+
+section.profile .main .capabilities {
+	font-size:13px;
+}
+section.profile .main .capabilities td {
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+section.profile .main .works {
+	width:100%;
+	border-collapse: separate;
+}
+
+
+section.profile .main .label {
+	display:inline-block;
+}
+section.profile .main .attr {
+	font-size:11px;
+	margin-top:5px;
+	border-top:1px solid #ccc;
+	padding-top:5px;
+}
+
+
+section.profile .main .works thead tr th {
+	font-size:14px;
+	font-family: "Museo";
+	font-weight:500;
+	color:#96a2a4;
+	padding:7px;
+	text-align: center;
+}
+
+section.profile .main .works tbody tr {
+	border-left:1px solid #e7eaeb;
+}
+section.profile .main .works tbody tr td {
+	border-bottom:1px solid #e7eaeb;
+	background-color:#fff;
+	height:35px;
+	position: relative;
+}
+
+section.profile .main .works tbody tr:hover td {
+	background:#fafafa;
+	border-bottom:1px solid #c4cfd1;
+}
+
+section.profile .main .works tbody tr td:first-child {
+	min-width:300px;
+	font-weight:500;
+	padding-left:20px;
+}
+
+section.profile .main .works thead tr th:nth-child(1) {
+	text-align: left;
+}
+section.profile .main .works thead tr th:nth-child(2) {
+	min-width:100px;
+	text-align: left;
+}
+section.profile .main .works tbody tr td:nth-child(7),
+section.profile .main .works tbody tr td:nth-child(8) {
+	text-align: center;
+	padding:0;
+	width:50px;
+}
+
+section.profile .main .works tbody tr td:first-child:before {
+	position: absolute;
+	content:"";
+	top:0;
+	left:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 20px 0 0;
+	border-color: #e7eaeb transparent transparent transparent;
+}
+
+
+section.profile .main .works .progress-bars {
+	position: absolute;
+	bottom:0;
+	height:3px;
+	font-size:0;
+}
+
+
+
+section.profile .main .works .progress-bars .bar {
+	width:14px;
+	height:3px;
+	background:#e7eaeb;
+	display:inline-block;
+	position: relative;
+	margin-right:2px;
+}
+section.profile .main .works .progress-bars .bar.grey {
+	background:#96a2a4;
+}
+section.profile .main .works .progress-bars .bar.active {
+	background:#02a9d1;
+}
+section.profile .main .works .progress-bars .bar.loading {
+	background:#e17036;
+}
+section.profile .main .works .progress-bars .bar.complete {
+	background:#69c6b3;
+}
+section.profile .main .works .progress-bars .bar.active-progress:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #02a9d1 transparent;
+}
+section.profile .main .works .progress-bars .bar.loading-progress:before {
+	content:"";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 10px 10px;
+	border-color: transparent transparent #e17036 transparent;
+}
+section.profile .main .works .progress-bars .bar.complete-progress:before {
+	content: "\f00c";
+	position: absolute;
+	bottom:0;
+	right:0;
+	width: 14px;
+	padding-top:1px;
+	font-size:9px;
+	text-align:center;
+	font-family: FontAwesome;
+	color:#fff;
+	height: 15px;
+	background: #69c6b3;
+	border-top:2px solid #69c6b3;
+	border-radius:2px;
+}
+
+section.profile .main .works .status {
+	font-size:11px;
+	color:#96a2a4;
+}
+
+
+
+
+section.profile .main .works .date {
+	font-weight: bold;
+	color:#4f6365;
+	text-align: center;
+	transition: none;
+}
+section.profile .main .works .date sup {
+	font-weight: normal;
+	color:#96a2a4;
+	transition: none;
+}
+section.profile .main .works .month {
+	color:#96a2a4;
+	font-size:11px;
+	text-align: center;
+	transition: none;
+}
+
+
+section.profile .main .works td.active .date,
+section.profile .main .works td.active .month,
+section.profile .main .works td.active .date sup {
+	color:#02a9d1;
+}
+
+section.profile .main .works td.loading .date,
+section.profile .main .works td.loading .month,
+section.profile .main .works td.loading .date sup {
+	color:#e17036;
+}
+
+
+section.profile .main .works td.inactive .date,
+section.profile .main .works td.inactive .month,
+section.profile .main .works td.inactive .date sup {
+	color:#c5cccc;
+}
+
+
+
+
+section.profile .main .works .btn {
+	background: #fff;
+	border:none;
+	display: block;
+	
+	transition: none;;
+}
+section.profile .main .works .btn:hover {
+	background: #f1f1f1;
+}
+
+
+
+
+
+
+section.profile .main .matching {
+	
+	display: inline-table;
+	width:100%;
+}
+
+section.profile .main .matching.box {
+	background-color:#fff;
+	border-left:1px solid #b4bec0;
+	border-bottom:1px solid #b4bec0;
+	padding:10px;
+}
+
+
+section.profile .main .matching h4 {
+	margin-bottom: 5px;;
+}
+
+
+section.profile .main .attributes {
+	position: relative;
+	
+}
+
+section.profile .main .attributes .attribute {
+	height:22px;
+	position: relative;
+}
+
+
+
+
+section.profile .main .attributes .bar {
+	background:#d4dcde;
+	height:5px;
+	position: absolute;
+	left:0;
+	right:165px;
+	top:5px;
+}
+
+section.profile .main .attributes .text {
+	font-weight:500;
+	width:150px;
+	float:right;
+}
+
+
+section.profile .main .attributes .bar .bar-progress {
+	position: absolute;
+	left:0;
+	bottom:0;
+	top:0;
+	
+}
+
+
+
+section.profile .main .attributes .bar .bar-progress .percent {
+	position: absolute;
+	right:-20px;
+	top:-12px;
+	padding:7px;
+	background-color:#fff;
+	font-size:13px;
+	font-weight:500;
+}
+
+
+section.profile .main .attributes .bar.good .bar-progress {
+	background-color:#10c469;
+	color:#10c469;
+	width:84%;
+}
+
+	
+section.profile .main .attributes .bar.average .bar-progress {
+	background-color:#f6b442;
+	color:#f6b442;
+	width:52%;
+}
+
+
+
+section.profile .main .attributes .bar.bad .bar-progress {
+	background-color:#ff6163;
+	color:#ff6163;
+	width:22%;
+}
+
+section.profile .main .matching p {
+	font-size:13px;
+}
+
+section.profile .main .attributes .recommendations {
+	position: absolute;
+	visibility: hidden;
+	left:0;
+	top:45px;;
+	background:#fff;
+	width:50vw;
+	border-bottom:1px solid;
+	border-left:1px solid;
+	border-color: #b4bec0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 4px 8px rgba(0, 0, 0, .2);
+	transition: ease 0.25s all;
+	opacity: 0;
+}
+section.profile .main .attributes:hover .recommendations {
+	visibility: visible;
+	opacity: 1;
+	z-index: 50;
+}
+
+section.profile .main .attributes .recommendations:before {
+	content:"";
+	position: absolute;
+	top:-25px;
+	left:15px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 25px 25px 25px;
+	border-color: transparent transparent #e7eaeb transparent;
+}
+
+
+
+section.profile .main .attributes .recommendations .header {
+	background:#e7eaeb;
+	padding:10px;
+	padding-left:15px;
+}
+
+
+
+
+section.profile .main .attributes .recommendations .table-projects {
+	background: #fafafa;
+}
+
+section.profile .main .attributes .recommendations .table-projects table tr {
+	border-right:1px solid #e7eaeb;
+}
+
+section.profile .main .attributes .recommendations .table-projects table tr.active,
+section.profile .main .attributes .recommendations .table-projects table tr.active td{
+	background:#fff;
+	border-right:0;
+}
+
+section.profile .main .attributes .recommendations .table-projects table tr:hover {
+	background:#fff;
+	border-right:0;
+	cursor: pointer;
+}
+section.profile .main .attributes .recommendations .table-projects table tbody tr td:nth-child(2) {
+	font-size:13px;
+}
+section.profile .main .attributes .recommendations .table-projects table tbody tr td:nth-child(3) {
+	font-weight:500;
+}
+
+section.profile .main .attributes .recommendations .content.padding {
+	padding:15px;
+	padding-top:10px;
+	padding-bottom:0;
+	border-top:1px solid #ddd
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
