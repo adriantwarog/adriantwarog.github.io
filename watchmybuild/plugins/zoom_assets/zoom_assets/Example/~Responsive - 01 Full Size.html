@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Full Size - Smooth Zoom</title>
+<style>
+	html {
+		height: 100%;
+	}
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+	}
+	.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+</style>
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script>
+	jQuery(function($){
+		$('#yourImageID').smoothZoom({
+			width: '100%',
+			height: '100%',
+			responsive: true,
+			pan_BUTTONS_SHOW: false
+		});
+	});
+</script>
+
+</head>
+<body><div id="lab"></div>
+	<img id="yourImageID" src="images/your_image.jpg" />
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Example 4 - Smooth Zoom</title>
+
+<style>
+	.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}	
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+	
+	body {
+		font-family:"Helvetica", "Arial", sans-serif;
+		color:#666;
+		font-size:12px;
+	}
+	
+	span {
+		color:#78C0FC;
+		font-family:"Courier New", Courier, monospace;
+	}
+	
+	a:link {
+		color:#06C;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	a:visited {
+		color:#06C;
+	}
+	a:active {
+		color:#06C;
+		text-decoration:none;
+	}
+	a:hover {
+		color:#039;
+		text-decoration:underline;
+	}	
+</style>
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script>
+	jQuery(function($){
+		$('#yourImageID').smoothZoom({
+			width: 512,
+			height: 384,
+			zoom_BUTTONS_SHOW : 'NO',
+			pan_BUTTONS_SHOW : 'NO',
+			pan_LIMIT_BOUNDARY : 'NO'
+		});
+	});
+	
+	function writeObject(){
+		
+		var zoomDataObject = $('#yourImageID').smoothZoom('getZoomData');		
+		$('#code').html(		
+			"Normal X: <span style='color:#000000'>"+parseInt(zoomDataObject.normX) +"</span>"
+			+"<br />Normal Y: <span style='color:#000000'>"+parseInt(zoomDataObject.normY) +"</span>"
+			+"<br />Normal Width: <span style='color:#000000'>"+parseInt(zoomDataObject.normWidth) +"</span>"
+			+"<br />Normal Height: <span style='color:#000000'>"+parseInt(zoomDataObject.normHeight) +"</span>"
+			
+			+"<br /><br />Scaled X: <span style='color:#000000'>"+parseInt(zoomDataObject.scaledX)  +"</span>"
+			+"<br />Scaled Y: <span style='color:#000000'>"+parseInt(zoomDataObject.scaledY) +"</span>"
+			+"<br />Scaled Width: <span style='color:#000000'>"+parseInt(zoomDataObject.scaledWidth) +"</span>"
+			+"<br />Scaled Height: <span style='color:#000000'>"+parseInt(zoomDataObject.scaledHeight) +"</span>"
+
+			+"<br /><br />Center X: <span style='color:#000000'>"+parseInt(zoomDataObject.centerX) +"</span>"
+			+"<br />Center Y: <span style='color:#000000'>"+parseInt(zoomDataObject.centerY) +"</span>"	
+			
+			+"<br /><br />Scale Ratio:<br /> <span style='color:#000000'>"+zoomDataObject.ratio +"</span>"		
+		);	
+	}
+</script>
+ 
+</head>
+<body>
+
+	<div style="float:left; margin-right:20px"><img id="yourImageID" src="images/your_image_locations.jpg" /> </div>
+	<div style="float:left; width:110px; height:354px; background-color:#F2F2F2; padding:15px">
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('focusTo', {x:357, y:248, zoom:150, speed:2})" onClick="return false">FocusTo</a><br /> <span>(Location 1)</span><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('focusTo', {x:492, y:482, zoom:200})" onClick="return false">FocusTo</a><br /> <span>(Location 2)</span><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('focusTo', {x:676, y:196, zoom:100})" onClick="return false">FocusTo</a><br /> <span>(Location 3)</span><br /><br /><br />
+			
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('zoomIn')" onClick="return false">Zoom In</a><br /><br />
+			
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('zoomOut')" onClick="return false">Zoom Out</a><br /><br />
+	
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('moveLeft')" onClick="return false">Move Left</a><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('moveRight')" onClick="return false">Move Right</a><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('moveUp')" onClick="return false">Move Up</a><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('moveDown')" onClick="return false">Move Down</a><br /><br />
+		
+		<a href="#" onmousedown="$('#yourImageID').smoothZoom('Reset')" onClick="return false">Reset</a><br /><br />
+	</div>
+	<div style="float:left; width:180px;  background-color:#F2F2F2; margin-left:20px; padding:15px">
+		<a href="#" onmousedown="writeObject()" onClick="return false">Get Zoom Data:</a><br /><br />
+		<span id="code" style="color:#888"></span>
+	</div>
+
+</body>
+
+</html>

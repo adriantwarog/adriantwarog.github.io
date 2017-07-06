@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Example 2 - Smooth Zoom</title>
+
+<style>	
+	.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}	
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+</style>
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script>
+	jQuery(function($){
+		$('#yourImageID').smoothZoom({
+			width: 512,
+			height: 384,
+			pan_BUTTONS_SHOW: "NO",
+			pan_LIMIT_BOUNDARY: "NO",
+			button_SIZE: 24,
+			button_ALIGN: "top right",	
+			zoom_MAX: 100,
+			border_TRANSPARENCY: 20,
+			
+			/******************************************
+			Enable Responsive settings below if needed.
+			Max width and height values are optional.
+			******************************************/
+			responsive: false,
+			responsive_maintain_ratio: true,
+			max_WIDTH: '',
+			max_HEIGHT: ''
+		});
+	});
+</script>
+ 
+</head>
+<body>
+
+	<img id="yourImageID" src="images/your_image.jpg" /> 
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Example 6 - Smooth Zoom</title>
+
+<style>	
+	.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}	
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+	#zoom_container {
+		overflow: hidden;
+	}	
+	.zoom_thumbnails {
+		margin: 0px;
+		padding: 0px;
+		display: inline-block;
+	}
+	.zoom_thumbnails li {
+		display: inline-block;
+	}		
+	.zoom_thumbnails li img {
+		margin: 5px;
+		border: 0px;
+	}	
+</style>
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script>
+	jQuery(function($){
+		$('.zoom_thumbnails').find('li a').each(function (){		
+			$(this).bind('click', {src: $(this).attr('href')}, function (e){
+				
+				//Add your zoom settings here
+				$('#zoom_container').smoothZoom('destroy').css('background-image', 'url(zoom_assets/preloader.gif)').smoothZoom({
+					image_url: e.data.src,
+					width: 512,
+					height: 384,
+					
+					/******************************************
+					Enable Responsive settings below if needed.
+					Max width and height values are optional.
+					******************************************/
+					responsive: false,
+					responsive_maintain_ratio: true,
+					max_WIDTH: '',
+					max_HEIGHT: ''
+				});
+				return false;
+				
+			});			
+		}).eq(0).trigger('click');
+	});
+</script>
+ 
+</head>
+<body>
+	<div id="zoom_container"></div>
+	<div style="width: 512px; text-align:center">
+		<ul class="zoom_thumbnails">
+			<li><a href="images/gallery_images/main1.jpg" data-size="500,400"><img src="images/gallery_images/thumb1.jpg"></a></li>		
+			<li><a href="images/gallery_images/main2.jpg" data-size="500,400"><img src="images/gallery_images/thumb2.jpg"></a></li>		
+			<li><a href="images/gallery_images/main3.jpg" data-size="500,400"><img src="images/gallery_images/thumb3.jpg"></a></li>		
+			<li><a href="images/gallery_images/main4.jpg" data-size="500,400"><img src="images/gallery_images/thumb4.jpg"></a></li>
+		</ul>	
+	</div>
+</body>
+
+</html>

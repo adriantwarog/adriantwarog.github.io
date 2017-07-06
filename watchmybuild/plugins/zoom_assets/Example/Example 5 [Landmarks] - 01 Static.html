@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Example 5 - Smooth Zoom</title>
+
+<style>
+	.smooth_zoom_preloader {
+		background-image: url(zoom_assets/preloader.gif);
+	}	
+	.smooth_zoom_icons {
+		background-image: url(zoom_assets/icons.png);
+	}
+	#zoom_container .landmarks{
+		position:absolute;
+		z-index:10;	
+		top:0px;
+		left:0px;
+		font-family: Helvetica, Arial, Verdana;
+		font-size:12px;
+		color: #ffffff;
+	}	
+	#zoom_container .landmarks .item {
+		position:absolute;		
+		text-align:center;		
+		display: none;	
+	}	
+	#zoom_container .landmarks .lable div {
+		width: 100px;
+		padding: 4px;		
+	}	
+	#zoom_container .landmarks .mark .text{
+		background-color:#000000;
+		padding:2px 6px;
+	}	
+</style>
+<script src="zoom_assets/jquery-1.11.1.min.js"></script>
+<script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script>
+	jQuery(function($){
+		$('#yourImageID').smoothZoom({
+			width: 512,
+			height: 384,
+			pan_BUTTONS_SHOW: "NO",
+			pan_LIMIT_BOUNDARY: "NO",
+			button_SIZE: 24,
+			button_ALIGN: "top right",	
+			zoom_MAX: 800,
+			border_TRANSPARENCY: 20,
+			container: 'zoom_container',
+			
+			/******************************************
+			Enable Responsive settings below if needed.
+			Max width and height values are optional.
+			******************************************/
+			responsive: false,
+			responsive_maintain_ratio: true,
+			max_WIDTH: '',
+			max_HEIGHT: ''
+		});
+	});
+</script>
+ 
+</head>
+<body>
+	<div id="zoom_container">
+	
+		<!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
+		<img id="yourImageID" src="images/your_image_map.jpg" width="1024px" height="768px" />
+
+		<!-- HELP NOTE:----------------------------------------------------------------------------------- 
+			* All the landmarks should be wrapped inside the div with class "landmarks" as shown below.
+						
+			* The "data-show-at-zoom" attribute is the percentage value in which the landmark will show. 
+			  Set this value to "0" if you want ot show landmarks always. 
+			  This attribute can also be set to individual landmarks with different zoom values.
+			  
+			* The "data-allow-scale" attribute is to enable/ disable the scalability of landmarks (Doesn't supported by IE8 and below).
+			  Set "true" if the landmarks needs to resize along with main image.
+			  
+			* The "data-allow-drag" attribute is to enable/disable the draggability of main image while the mouse/finger touches the landmarks.
+			  IMPORTANT: If the landmarks/locations/lables have hyperlinks, set data-allow-drag = "false"
+		----------------------------------------------------------------------------------------------- -->
+		<div class="landmarks" data-show-at-zoom="100" data-allow-drag="true" data-allow-scale="false">	
+		
+			<!------------------------------------------------------------------------------------------------------------------
+				HELP NOTE:
+				The following 2 div tags are lables. Each lable can be customised individually using following 5 data attributes:
+				
+				* data-position= "100,50" [Enter x, y values of position - this is center point of the element not top-left]
+				* data-bg-color= "#000000" [BG color of lable text]
+				* data-bg-opacity= ".7" [BG transparency of lable text]
+				* data-show-at-zoom= "150" [At which zoom percentage, this landmark should be visible. Set 0 to show always]
+				* data-allow-scale= "true" [To resize the landmark or not](Doesn't supported by IE8 and below).
+			---------------------------------------------------------------------------------------------------------------- -->				
+				
+			<div class="item lable" data-position="780,170" data-bg-color="#000000" data-bg-opacity=".7" data-show-at-zoom="0">
+				<div>												
+					<strong>Permanent Lable</strong>  Shows at all zoom levels.
+				</div>
+			</div>
+			
+			<div class="item lable" data-position="490,540" data-allow-scale="true">
+				<div>						
+					<strong>Lable 2</strong>
+				</div>	
+			</div>			
+
+			<!------------------------------------------------------------------------------------------------------------------
+				HELP NOTE:
+				The following 3 div tags are marks. Each mark can be customised individually using following 3 data attributes:
+				
+				* data-position= "100,50" [Enter x, y values of position - this is center point of the element not top-left]
+				* data-show-at-zoom= "150" [At which zoom percentage, this landmark should be visible. Set 0 to show always]
+				* data-allow-scale= "true" [To resize the landmark or not] (Doesn't supported by IE8 and below).
+			---------------------------------------------------------------------------------------------------------------- -->
+			
+			<div class="item mark"data-position="480,465" data-show-at-zoom="0">
+				<div>
+					<div class="text" style="width:100px">
+						<strong>Permanent Mark</strong><br /> Shows at all zoom levels.
+					</div>
+					<img src="images/mark.png" width="50px" height="50px" alt="Permanent Mark" />	
+				</div>	
+			</div>
+			
+			<div class="item mark" data-position="420, 380" data-allow-scale="true">
+				<div>
+					<div class="text">
+						<strong>Pin 1</strong>
+					</div>						
+					<img src="images/pin.png" width="50px" height="40px" alt="mark 1" />	
+				</div>									
+			</div>			
+			
+			<div class="item mark" data-position="558,515">
+				<div>
+					<div class="text">
+						<strong>Pin 2</strong>
+					</div>						
+					<img src="images/pin.png" width="50px" height="40px" alt="mark 2" />	
+				</div>									
+			</div>
+				
+		</div>
+	</div>
+</body>
+
+</html>
